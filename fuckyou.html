@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				height: 100vh;
+				position: relative;
+				background-color: black;
+			}
+
+			#fuck {
+				font-size: 5em;
+				font-weight: bolder;
+				text-align: center;
+				font-family: 'Special Elite', cursive;
+				color: white;
+				margin: 0;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p id="fuck"></p>
+
+		<script>
+		var i = 0;
+		var txt = 'Fuck You!';
+		var speed = 300;
+
+		function mesinKetik() {
+		  if (i < txt.length) {
+		    document.getElementById("fuck").innerHTML += txt.charAt(i);
+		    i++;
+		  } else {
+			  setTimeout(fuCk, 3000);
+		  }
+		}
+
+		setInterval(mesinKetik, speed);
+
+		function fuCk() {
+			document.getElementById("fuck").innerHTML = "";
+			i = 0;
+		}
+		</script>
+
+	</body>
+</html>
